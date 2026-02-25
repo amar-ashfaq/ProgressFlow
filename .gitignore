@@ -1,0 +1,111 @@
+##################################################
+## Build Outputs
+##################################################
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]Releases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# Logs
+[Ll]og/
+[Ll]ogs/
+*.log
+[Bb]uild[Ll]og.*
+
+# MSBuild
+*.binlog
+
+##################################################
+## IDE / Editor
+##################################################
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.DotSettings.user
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+##################################################
+## NuGet
+##################################################
+
+*.nupkg
+*.snupkg
+packages/
+
+##################################################
+## .NET Core
+##################################################
+
+project.lock.json
+project.fragment.lock.json
+
+##################################################
+## ASP.NET / Configuration
+##################################################
+
+ScaffoldingReadMe.txt
+appsettings*.Local.json
+
+##################################################
+## Testing
+##################################################
+
+[Tt]est[Rr]esult*/
+TestResult.xml
+nunit-*.xml
+*.VisualState.xml
+CodeCoverage/
+
+##################################################
+## Database / Local Data
+##################################################
+
+*.mdf
+*.ldf
+*.db
+
+##################################################
+## Azure
+##################################################
+
+*.publishsettings
+
+##################################################
+## Temporary / System Files
+##################################################
+
+~$*
+*~
+*.tmp
+*.temp
+*.cache
+*.bak
+*.swp
+
+##################################################
+## Entity Framework
+##################################################
