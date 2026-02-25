@@ -1,0 +1,6 @@
+@ProgressFlow_HostAddress = http://localhost:5028
+
+GET {{ProgressFlow_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
