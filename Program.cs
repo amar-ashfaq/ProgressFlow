@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProgressFlow.Data;
+using ProgressFlow.Repositories;
+using ProgressFlow.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,9 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// register DI
+builder.Services.AddScoped<IHabitRepository, HabitRepository>();
 
 var app = builder.Build();
 

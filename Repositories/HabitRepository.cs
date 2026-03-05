@@ -16,11 +16,11 @@ namespace ProgressFlow.Repositories
 
         public async Task<List<Habit>> GetAllHabitsByUserIdAsync(int userId)
         {
-            var habits = await _context.Habits.Where(x => x.UserId == userId).ToListAsync();
+            var habits = _context.Habits.Where(x => x.UserId == userId).ToList();
             return habits;
         }
 
-        public async Task<Habit?> GetHabitByIdAsync(int id)
+        public async Task<Habit> GetHabitByIdAsync(int id)
         {
             var habit = await _context.Habits.FirstOrDefaultAsync(x => x.Id == id);
             return habit;

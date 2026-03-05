@@ -1,8 +1,8 @@
 ﻿using ProgressFlow.Entities;
 
-namespace ProgressFlow.Repositories.Interfaces
+namespace ProgressFlow.Services.Interfaces
 {
-    public interface IHabitRepository
+    public interface IHabitService
     {
         Task<Habit> GetHabitByIdAsync(int id);
         Task<List<Habit>> GetAllHabitsByUserIdAsync(int userId);
